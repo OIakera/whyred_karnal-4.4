@@ -87,6 +87,11 @@
 #define SO_ATTACH_BPF		50
 #define SO_DETACH_BPF		SO_DETACH_FILTER
 
+<<<<<<< HEAD
 #define SCM_TIMESTAMPING_OPT_STATS	54
+=======
+#define SO_ATTACH_REUSEPORT_CBPF	51
+#define SO_ATTACH_REUSEPORT_EBPF	52
+>>>>>>> 6c0cbf8850a3... soreuseport: setsockopt SO_ATTACH_REUSEPORT_[CE]BPF
 
 #endif /* __ASM_GENERIC_SOCKET_H */
