@@ -694,6 +694,7 @@ endif
 ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
 KBUILD_CFLAGS	+= -Os
 else
+KBUILD_CFLAGS	+= -O3 -floop-nest-optimize -fgraphite-identity -ftree-loop-distribution
 ifeq ($(cc-name),gcc)
 KBUILD_CFLAGS	+= -O3
 KBUILD_CFLAGS	+= -mcpu=cortex-a73.cortex-a53
